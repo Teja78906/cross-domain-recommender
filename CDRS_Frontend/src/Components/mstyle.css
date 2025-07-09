@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Poppins:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --msecondary-color:rgb(150, 188, 212);
+  --mprimary-color:rgb(81, 167, 220)f;
+}
+/* body {
+  background-color: var(--mprimary-color);
+} */
+html {
+  font-size: 75.5%;
+}
+.mheader {
+    width: 100%;
+    height: 500px;
+    color: var(--msecondary-color);
+    background-color: var(--mprimary-color);
+    box-shadow: 0 5px 10px var(--msecondary-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .mheader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(bg2.png);
+    clip-path: circle(60% at left 300px);
+    z-index: -1;
+  }
+  .mrow2 {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    text-align: center;
+  }
+  .mrow2 h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .mrow2 img {
+    margin-top: 30px;
+    width: 250px;
+  }
+  .mrow1 h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 35px;
+    font-family: "Bodoni Moda", serif;
+  }
